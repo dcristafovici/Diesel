@@ -30,3 +30,24 @@
     color $wh
     font-family $Semi
     text-transform uppercase
+
+
+.button.button-pdf
+  padding-left 33px
+  padding-right 80px
+  &::after
+    content ''
+    position absolute
+    width 30px
+    height 34px
+    background url('../img/assets/price/pdf.svg') no-repeat center/contain
+    right 30px
+    top 12px
+  span
+    display block
+    text-align center
+    &:last-child
+      color #e59d9d
+      font-size 12px
+      line-height 30px
+      letter-spacing: 0.025em

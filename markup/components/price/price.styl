@@ -1,0 +1,71 @@
+.price
+  background url('../img/assets/price/bg.jpg') no-repeat center/cover
+  .title
+    h2
+      color $wh
+  &-tagline
+    text-align center
+    h3
+      color $wh
+      margin-bottom 30px
+
+
+  &-wrapper
+    width 100%
+    box-shadow: 0px 5px 40px 0px rgba(20, 20, 20, 0.3);
+    background $wh
+    border-radius: 5px
+    margin-bottom 40px
+  &-row
+    border-bottom 1px solid #e2e2e2
+    box-sizing: border-box
+    display flex
+    &:first-child
+      .price-cell
+        min-height: 70px
+  &-cell
+    padding-top 20px
+    padding-bottom 20px
+    min-height: 50px
+    text-align center
+    display flex
+    align-items center
+    justify-content center
+    box-sizing: border-box
+    border-right: 1px solid #e2e2e2
+    padding-left 20px
+    padding-right: 20px
+    box-sizing: border-box
+    span
+      font-size 20px
+      line-height 26px
+      font-family $Light
+      color $gr
+    a
+      font-size 20px
+      line-height 30px
+      color #00788a
+      font-family $Light
+      text-decoration underline
+    &:first-child
+      width 18.05555555555556%
+    &:nth-child(2)
+      width 14.40677966101695%
+    &:nth-child(3)
+      width 33.05084745762712%
+    &:nth-child(4)
+      width 14.40677966101695%
+    &:nth-child(5)
+      width 21.61016949152542%
+      border-right: none
+
+.price
+  &-bottom
+    display flex
+    align-items center
+    justify-content center
+    &__tl
+      margin-right 100px
+      h3
+        color $wh
+    
