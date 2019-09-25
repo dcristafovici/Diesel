@@ -9,6 +9,7 @@ html(class="no-js", lang="ru")
   include ../components/advantages/advantages
   include ../components/price/price
   include ../components/contract/contract
+  include ../components/reviews/reviews
   head
     +head(head.defaults)
   body.page
@@ -27,6 +28,8 @@ html(class="no-js", lang="ru")
     +price()
 
     +contract()
+
+    +reviews()
 
     script(src='%=static=%js/separate-js/svg4everybody.min.js')
     script svg4everybody();
