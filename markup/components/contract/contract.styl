@@ -1,0 +1,62 @@
+.contract
+  &-items
+    display flex
+  
+  &-item
+    width 25%
+    padding-left 15px
+    padding-right 15px
+    box-sizing: border-box
+    &__photo
+      position relative
+      width 143px
+      margin 0 auto
+      margin-bottom 30px
+      height 143px
+      background $bl
+      border-radius: 50%
+      img
+        position absolute
+        left 50%
+        transform: translateX(-50%)
+        bottom -5px
+        max-width: unset
+        z-index 1
+    &__number
+      width 60px
+      height 60px
+      border-radius: 50%
+      background #d90909
+      display flex
+      position absolute
+      left -20px
+      top -20px
+      z-index 2
+      justify-content center
+      align-items center
+      font-size 30px
+      color $wh
+      font-family $Bold
+      box-shadow: 0px 3px 15px 0px rgba(15, 15, 15, 0.3);
+
+
+    &__title
+      text-align center
+      margin-bottom 15px
+
+      white-space nowrap
+    &__text
+      p
+        color $gr
+        font-size 18px
+        text-align center
+        font-family $Light
+
+.contract
+  &-tagline
+    margin-bottom 100px
+    text-align center
+    h3
+      font-family $Semi
+      color $bl
+    
