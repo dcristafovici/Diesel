@@ -10,6 +10,7 @@ html(class="no-js", lang="ru")
   include ../components/price/price
   include ../components/contract/contract
   include ../components/reviews/reviews
+  include ../components/virew/virew
   head
     +head(head.defaults)
   body.page
@@ -30,6 +31,8 @@ html(class="no-js", lang="ru")
     +contract()
 
     +reviews()
+
+    +virew()
 
     script(src='%=static=%js/separate-js/svg4everybody.min.js')
     script svg4everybody();
