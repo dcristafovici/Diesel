@@ -1,0 +1,38 @@
+.home
+  background url('../img/assets/home/bg.jpg') no-repeat center/cover
+  height 950px
+  box-sizing: border-box
+  padding-top 170px
+  overflow hidden
+  &-wrapper
+    display flex
+    justify-content space-between
+  &-title
+    padding-bottom 100px
+  &-left
+    width 60.16949152542373%
+  &-right
+    width calc(39.83050847457627% - 30px)
+    
+  &-image
+    width 130%
+
+  &-advantages
+    display flex
+    padding-bottom 100px
+
+  &-adv
+    &__item
+      width: 28.16901408450704%
+      &__icon
+        img
+          height 100%
+          object-fit: contain
+    &__text
+      position relative
+      top -5px
+      span
+        font-size 20px
+        color $gr
+        line-height:  27px
+        font-family $Reg

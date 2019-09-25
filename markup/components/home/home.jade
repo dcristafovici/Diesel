@@ -1,0 +1,57 @@
+include ../button/button
+mixin home(data)
+  section.home
+    .content
+      .home-wrapper
+
+        .home-left
+
+          .home-title
+            h1 Подберём 
+              span двигатель ЯМЗ  
+              | под Ваши 
+              br
+              | задачи по цене 
+              span от 200 000 рублей.
+              br
+              span Доставка бесплатно
+
+          .home-advantages
+
+            //- Home Adv Item
+            .home-adv__item
+              .home-adv__icon
+                img(src="static/img/assets/home/h1.png", alt="")
+              .home-adv__text 
+                span Отгружаем 
+                  br
+                  | от 3 дней
+
+            //- Home Adv Item
+            .home-adv__item
+              .home-adv__icon
+                img(src="static/img/assets/home/h2.png", alt="")
+              .home-adv__text 
+                span Гарантия 
+                  br
+                  | по сервисной
+                  br
+                  | книжке 1 год
+            
+            //- Home Adv Item
+            .home-adv__item
+              .home-adv__icon
+                img(src="static/img/assets/home/h3.png", alt="")
+              .home-adv__text 
+                span Доставка
+                  br
+                  | по всей России 
+                  br
+                  | и СНГ
+
+          .home-button
+            +button('#','Узнать точную цену и сроки')
+
+        .home-right
+          .home-image
+            img(src="static/img/assets/home/diesel.png", alt="")

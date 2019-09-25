@@ -2,13 +2,17 @@ doctype html
 html(class="no-js", lang="ru")
 
   include ../components/head/head
+  include ../components/header/header
+  include ../components/home/home
 
   head
     +head(head.defaults)
   body.page
     |%=symbols=%
 
-    h1 dsa
+    +header()
+
+    +home()
 
     script(src='%=static=%js/separate-js/svg4everybody.min.js')
     script svg4everybody();
