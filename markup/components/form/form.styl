@@ -46,7 +46,8 @@ input.select2-search__field
   height 40px
 
 
-input[type='radio']
+input[type='radio'],
+input[type='checkbox']
   display none
   &:checked
     + label
@@ -82,3 +83,20 @@ input[type='radio']
       height 8px
       transition: all 0.5s ease-in-out
       opacity 0
+
+input[type='checkbox']
+  + label 
+    font-family $Light
+    color #808080
+    &::before
+      width 22px
+      border: 1px solid #808080
+      height 22px
+      border-radius: 3px
+    &::after
+      opacity 0
+      background url('../img/assets/quiz/check.svg') no-repeat center/contain 
+      width 15px
+      height 15px
+      top 9px
+      left 4px

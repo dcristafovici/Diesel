@@ -42,3 +42,66 @@ mixin footer(data)
               .footer-item__dev
                 span Разрабокта сайта: 
                 a(href="https://digital-mayak.ru/" target='_blank') digital-mayak.ru
+
+
+
+
+
+  #popup-callback.popup.hidden
+    .popup-title Укажите
+      span  Ваш номер
+      br
+      span телефона, 
+      |  мы свяжемся
+      br
+      | с Вами в 
+      span ближайшее время
+    
+    form.form
+      .form-group
+        label Укажите Ваше имя
+        input(type="text" placeholder="Как к Вам обращаться")
+      .form-group
+        label Номер телефона
+        input(type="tel" placeholder="+7 (___) ___-__-__")
+      .form-group
+        button.button
+          span Заказать звонок
+      
+      .form-group
+        input(type="checkbox" checked required id='callback-check')
+        label(for="callback-check") Я согласен на обработку персональных данных
+  
+  #popup-model.popup.hidden
+    .popup-title Узнать стоимость двигателя
+      br
+      span [модель_ двигателя]
+    form.form
+      .form-group
+        label Укажите Ваше имя
+        input(type="text" placeholder="Как к Вам обращаться")
+      .form-group
+        label Номер телефона
+        input(type="tel" placeholder="+7 (___) ___-__-__")
+      .form-group
+        button.button
+          span Узнать стоимость и сроки поставки
+      
+      .form-group
+        input(type="checkbox" checked required id='model-check')
+        label(for="model-check") Я согласен на обработку персональных данных
+  
+
+  #popup-correct.popup.hidden
+    .popup-title 
+      span Введите корректный номер
+    form.form
+      .form-group
+        input(type="tel" placeholder="+7 (___) ___-__-__")
+      .form-group
+        button.button
+          span Скорректировать номер
+      
+      .form-group
+        input(type="checkbox" checked required id='model-check')
+        label(for="model-check") Я согласен на обработку персональных данных
