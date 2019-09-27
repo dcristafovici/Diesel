@@ -51,3 +51,35 @@
       font-size 12px
       line-height 30px
       letter-spacing: 0.025em
+
+.button
+  &.quiz-button
+    cursor pointer
+    padding-left 40px
+    padding-right 65px
+    &::after
+      content ''
+      position absolute
+      width 20px
+      height 20px
+      top 50%
+      margin-top -10px
+      right 30px
+      background url('../img/assets/quiz/right.svg') no-repeat center/contain
+
+    &.quiz-button__prev
+      padding-right 45px
+      padding-left 60px
+      background none
+      border: 1px solid #5c5c5c
+      box-shadow: none
+      span
+        color #5c5c5c
+      &::after
+        content ''
+        right auto
+        left 30px
+        background url('../img/assets/quiz/left.svg') no-repeat center/contain
+      &::before
+        content none
+      

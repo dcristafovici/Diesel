@@ -1,0 +1,127 @@
+mixin quiz(data)
+  section.quiz  
+    .content
+      .title
+        h2 Ответьте на  
+          span  4 простых вопроса и узнайте  
+          span  точную цену
+          br
+          span и сроки поставки 
+          | двигателя уже через 
+          span 15 минут
+
+      #quiz.quiz-proces-1
+        .quiz-wrapper
+          .quiz-title
+            h4 Узнайте стоимость вашего двигателя 
+              span за 60 секунд 
+              | и получите доставку 
+              span бесплатно
+
+          .quiz-line
+            .quiz-line__wrapper
+              .quiz-line__inner
+                h6 Выполнено 
+                  span.active 25%
+                  span 50%
+                  span 75%
+                  span 100%
+          
+          .quiz-steps
+            span Шаг 1
+            ul
+              li
+                span
+              li
+                span
+              li  
+                span
+              li
+                span 
+          
+          .quiz-bottom
+            form.quiz-form
+              .quiz-form__wrapper
+                
+
+                .quiz-item.active
+                  .quiz-item__title
+                    h3 1) Какой двигатель Вам нужен?
+                  .form-group
+                    label Выберите из списка
+                    select
+                      option(value="Двигатель 1.4TDI") Двигатель 1.4 TDI
+                      option(value="Двигатель 1.6TDI") Двигатель 1.6 TDI
+                      option(value="Двигатель 1.8TDI") Двигатель 1.8 TDI
+                      option(value="Двигатель 2.0TDI") Двигатель 2.0 TDI                    
+                      option(value="Двигатель 2.2TDI") Двигатель 2.2 TDI
+                      option(value="Двигатель 2.4TDI") Двигатель 2.4 TDI
+                      option(value="Двигатель 2.6TDI") Двигатель 2.6 TDI
+                      option(value="Двигатель 2.8TDI") Двигатель 2.8 TDI
+                      option(value="Двигатель 3.0TDI") Двигатель 3.0 TDI
+                      option(value="Двигатель 3.2TDI") Двигатель 3.2 TDI
+                
+                .quiz-item
+                  .quiz-item__title
+                    h3 2) Какие у Вас ожидания от нашей работы?
+                  .form-group
+                    input(type="radio" name='quiz_price' checked id='fr_price_one')
+                    label(for="fr_price_one") Сделайте упор на цену. Нужно как можно дешевле
+                  .form-group
+                    input(type="radio" name='quiz_price'  id='fr_price_two')
+                    label(for="fr_price_two") Оптимальный вариант. Баланс между ценой и качеством
+                  
+                  .form-group
+                    input(type="radio" name='quiz_price'  id='fr_price_thre')
+                    label(for="fr_price_thre") Упор на качество. Нужно всё самое лучшее
+
+
+
+                .quiz-item
+                  .quiz-item__title
+                    h3 3) Каким бюджетом Вы располагаете??
+                  .form-group
+                    input(type="radio" name='quiz_budget' checked id='fr_bud_one')
+                    label(for="fr_bud_one") менее 250 000 рублей
+                  .form-group
+                    input(type="radio" name='quiz_budget'  id='fr_bud_two')
+                    label(for="fr_bud_two") 250 000-400 000 рублей
+                  .form-group
+                    input(type="radio" name='quiz_budget'  id='fr_bud_thre')
+                    label(for="fr_bud_thre") 400 000-600 000 рублей
+                  .form-group
+                    input(type="radio" name='quiz_budget'  id='fr_bud_four')
+                    label(for="fr_bud_four") Более 600 000 рублей
+
+                .quiz-item
+                  .quiz-item__title
+                    h3 4) Куда доставлять готовый двигатель?
+                  .form-group
+                    label Выберите страну
+                    select
+                      option(value="Россия") Россия
+                      option(value="Украина") Украина
+                      option(value="Белоруссия") Белоруссия
+                      option(value="Литва") Литва       
+                  .form-group
+                    label Выберите город
+                    select
+                      option(value="Москва") Москва
+                      option(value="Санкт-Петербург") Санкт-Петербург
+                      option(value="Владивосток") Владивосток
+                      option(value="Сочи") Сочи                
+            
+
+
+            .quiz-controller
+
+
+              .quiz-back#quiz-back
+                .button.quiz-button.quiz-button__prev
+                  span Назад
+
+
+
+              .quiz-next#quiz-next
+                .button.quiz-button
+                  span Далее
