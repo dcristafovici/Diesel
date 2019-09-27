@@ -1,0 +1,44 @@
+.footer
+  background #161a20
+  padding-top 35px
+  padding-bottom 35px
+  span,
+  a
+    font-size 25px
+    color $wh
+    font-family $Reg
+    display block
+    line-height 50px
+  &-wrapper
+    display flex
+    justify-content space-between
+
+  
+  &-item
+    width 32%
+    &.footer-item__column
+      display flex
+      flex-direction: column
+      justify-content space-between
+    &:last-child
+      width 36%
+    &__title
+      margin-bottom 30px
+      h3
+        color #e21717
+        font-size 35px
+        font-family $Bold
+    &__links
+      a
+        color #1182a2
+        text-decoration underline
+    &__dev
+      display flex
+      align-items center
+      span
+        color #a5a5a5
+        margin-right 10px
+      a
+        color #1182a2
+        text-decoration underline
+    

@@ -1,2 +1,44 @@
 mixin footer(data)
-    footer.footer
+  footer.footer
+    .footer
+      .content
+        .footer-wrapper
+
+          //- Footer Item
+          .footer-item
+            .footer-item__title
+              h3 Компания
+            .footer-address
+              address
+                span ООО ДизельТрейд
+                span 150044, г.Ярославль,
+                  br
+                  | ул. Промышленная,
+                  br
+                  | д.1, стр.3, оф.308
+            
+          
+          //- Footer Item
+          .footer-item
+            .footer-item__title
+              h3 Контакты
+            .footer-contacts
+              a(href="tel:+7 (4852) 58-20-70 ") +7 (4852) 58-20-70 
+              a(href='tel:+7 (800) 700-03-74 ') +7 (800) 700-03-74  
+              a(href='mailto:dizeltraid@mail.ru') dizeltraid@mail.ru 
+              span ПН-ПТ 
+          
+
+          .footer-item.footer-item__column
+            .footer-item__top
+              .footer-item__title
+                h3 Положения
+            
+            .footer-item__bottom
+              .footer-item__links
+                a(href="#") Политика конфиденциальности
+                a(href="#") Согласие на обработку данных
+            
+              .footer-item__dev
+                span Разрабокта сайта: 
+                a(href="https://digital-mayak.ru/" target='_blank') digital-mayak.ru

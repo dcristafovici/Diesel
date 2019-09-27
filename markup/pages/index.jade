@@ -14,6 +14,8 @@ html(class="no-js", lang="ru")
   include ../components/sertificates/sertificates
   include ../components/portfolio/portfolio
   include ../components/any/any
+  include ../components/contacts/contacts
+  include ../components/footer/footer
   head
     +head(head.defaults)
   body.page
@@ -42,6 +44,11 @@ html(class="no-js", lang="ru")
     +portfolio()
 
     +any()
+
+    +contacts()
+
+    +footer()
+
 
     script(src='%=static=%js/separate-js/svg4everybody.min.js')
     script svg4everybody();
