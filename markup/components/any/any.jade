@@ -1,0 +1,45 @@
+include ../button/button
+mixin any(data)
+  section.any
+    .content
+      .any-wrapper
+
+        //- Any Left
+        .any-left
+
+          .title
+            h2 Если у Вас остались вопросы
+
+          .subtitle
+            h4 По поводу доставки, моделей и комплектации
+              br
+              | двигателей, а также комплектов переоборудования
+          
+          .tagline
+            span Свяжитесь с нами, наши специалисты
+              br
+              | ответят Вам. Позвоните по номерам:
+          
+          .any-phones
+            a(href="tel:+7 (4852) 58-20-70") +7 (4852) 
+              span 58-20-70
+            a(href="tel:+7 (800) 700-03-74") +7 (800) 
+              span 700-03-74
+            
+          .any-button
+            +button('#','Связаться со специалистом')
+          
+          .any-bottom
+
+            a(href="#").any-write
+              .any-write__icon
+                img(src="static/img/assets/any/wt.png")
+              .any-write__span
+                span Написать
+            
+            .any-specialist
+              span Игорь Горшков
+              span Ведущий специалист
+
+        .any-image
+          img(src="static/img/assets/any/spec.png", alt="")
