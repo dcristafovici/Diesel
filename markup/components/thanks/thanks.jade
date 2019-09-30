@@ -1,0 +1,21 @@
+mixin thanks(data)
+  section.thanks
+    .content
+
+      .thanks-icon
+        img(src="static/img/assets/thanks/check.svg", alt="")
+      .thanks-title
+        h1 Спасибо за обращение!
+      .thanks-number
+        span Вы указали номер 
+        span#phonenumber +7 (925) 925-25-25
+      
+      .thanks-edit
+        span Если Вы ошиблись при вводе номера -  
+          a(href='#')  скорректируйте    
+          |  его и повторно  
+          br
+          |  отправьте заявку с верным номером телефона
+    
+      .thanks-home
+        a(href="index.html") Вернуться на сайт
