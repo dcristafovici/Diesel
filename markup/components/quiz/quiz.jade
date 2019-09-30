@@ -1,5 +1,5 @@
 mixin quiz(data)
-  section.quiz  
+  section.quiz
     .content
       .title
         h2 Ответьте на  
@@ -106,8 +106,41 @@ mixin quiz(data)
                       option(value="Москва") Москва
                       option(value="Санкт-Петербург") Санкт-Петербург
                       option(value="Владивосток") Владивосток
-                      option(value="Сочи") Сочи                
-            
+                      option(value="Сочи") Сочи    
+
+                .quiz-item.quiz-item__last
+                  .quiz-item__title
+                    h3
+                      span Спасибо, 
+                      | мы подбираем для Вас варианты и делаем расчёты.
+                      br
+                      | Они будут готовы в течение 
+                      span 15 минут. 
+                      | Оставьте свои данные,
+                      br
+                      | чтобы мы могли 
+                      span сообщить Вам результаты:             
+                  
+                  .form-row
+
+                    .form-group
+                      label Укажите Ваше имя
+                      input(type="text" required placeholder="Как к Вам обращаться")
+                    .form-group
+                      label Номер телефона
+                      input(type="tel" required placeholder="Номер телефона")
+                    .form-group
+                      label E-mail 
+                        span (не обязательно)
+                      input(type="email" placeholder="ivanivanov@mail.ru")
+                    
+                    .form-group
+                      button.button
+                        span отправить
+                      
+                    .form-group
+                      input(type="checkbox" checked required id='quiz-check')
+                      label(for="quiz-check") Я согласен на обработку персональных данных
 
 
             .quiz-controller

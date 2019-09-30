@@ -192,3 +192,46 @@
     width 100%
     background #358312
 
+
+.quiz
+  &-item
+    &:nth-child(4)
+      .form-group
+        &:last-child
+          margin-top 25px
+
+.quiz.showform
+  .quiz-form
+    width 100%
+  .quiz-item__title
+    margin-bottom 50px
+    h3
+      font-family $Light
+      span
+        font-family $Bold
+
+
+  .form-row
+    flex-wrap: wrap
+    display flex
+    align-items flex-end
+
+    .form-group
+      width 26.12612612612613%
+      margin-right 1.44144144144144%
+      label
+        color #191919
+        font-size 20px
+        font-family $Bold
+        span
+          font-family $Light
+      input
+        width 100%
+      &:nth-child(4)
+        width 16.21621621621622%
+        margin-right 0
+      &:last-child
+        width 100%
+        label 
+          font-family $Light
+          color #808080
