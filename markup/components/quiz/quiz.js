@@ -7,7 +7,6 @@ $(document).ready(function(){
 
   var quizCount = 1;
   var maxQuizCount = $('.quiz-item').length
-  console.log(maxQuizCount)
 
 
   $('#quiz-next').on('click',function(){

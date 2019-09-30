@@ -1,0 +1,79 @@
+include ../button/button
+mixin home-black(data)
+  section.home.home-black
+    .content
+      .home-wrapper
+
+        .home-left
+
+          .home-title
+            h1 Двигатели ЯМЗ 
+              span со скидкой 20%
+              br
+              span до 31 октября 
+              | с доставкой
+              br
+              | в подарок
+          .home-advantages
+
+            //- Home Adv Item
+            .home-adv__item
+              .home-adv__icon
+                img(src="static/img/assets/home/h1.png", alt="")
+              .home-adv__text 
+                span Отгружаем 
+                  br
+                  | от 3 дней
+
+            //- Home Adv Item
+            .home-adv__item
+              .home-adv__icon
+                img(src="static/img/assets/home/h2.png", alt="")
+              .home-adv__text 
+                span Гарантия  
+                  br
+                  |  по сервисной 
+                  br
+                  | книжке 1 год
+            
+            //- Home Adv Item
+            .home-adv__item
+              .home-adv__icon
+                img(src="static/img/assets/home/h3.png", alt="")
+              .home-adv__text 
+                span Доставка
+                  br
+                  | по всей России 
+                  br
+                  | и СНГ
+
+        .home-right
+          .home-image
+            img(src="static/img/assets/home/diesel.png", alt="")
+          .home-form
+            #home-form.popup
+              .popup-title Узнать стоимость двигателя
+                br 
+                |  с учетом скидки 20% 
+                br
+                |  и сроки поставки
+
+              .popup-subtitle Укажите Ваш номер телефона,
+                br 
+                |  мы свяжемся с Вами в ближайшее
+                br
+                |  время
+              form.form
+                .form-group
+                  label Укажите Ваше имя
+                  input(type="text" placeholder="Как к Вам обращаться")
+                .form-group
+                  label Номер телефона
+                  input(type="tel" placeholder="+7 (___) ___-__-__")
+                .form-group
+                  button.button
+                    span Узнать стоимость и сроки поставки
+                
+                .form-group
+                  input(type="checkbox" checked required id='home-check')
+                  label(for="home-check") Я согласен на обработку персональных данных
