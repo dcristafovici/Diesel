@@ -5,4 +5,6 @@ $(document).ready(function(){
     $('.contract-item__title').equalHeights()
     $('.offer-item__title').equalHeights()
   }
+
+  $("input[type='tel']").inputmask("+7 (999) 999-99-99");
 })

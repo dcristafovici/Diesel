@@ -262,6 +262,14 @@
     .home-left
       width 50%
 
+  .contract-item
+    &:nth-child(2)
+      .contract-item__bullets
+        display none
+    &__title
+      h3
+        font-size 20px
+
 @media screen and (max-width: 767px)
   .content
     width calc(100% - 40px)
@@ -629,6 +637,11 @@
         font-size 20px
 
 
+  .contract-item__bullets 
+    right -25px
+    span
+      margin-right 10px
+
 @media screen and (max-width: 480px)
 
   .header
@@ -808,3 +821,27 @@
       font-size 16px
   .home.home-black .home-form button.button span
     font-size 12px
+  
+  .contract
+    padding-bottom 50px
+  .contract-item__bullets 
+    flex-direction: column
+    bottom -85px
+    right auto
+    left 50%
+    transform: translateX(-50%)
+    bottom -85px
+    top: auto
+    span
+      margin-right 0
+      margin-bottom 15px
+      &:last-child
+        margin-bottom 0
+  
+  .contract-item
+    margin-bottom 150px
+    &:nth-child(2)
+      .contract-item__bullets
+        display flex
+    &:last-child
+      margin-bottom 0
