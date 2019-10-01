@@ -136,7 +136,7 @@
     background-size 15%
 
 
-@media screen and (max-width: 993px)
+@media screen and (max-width: 992px)
   .content
     width 740px
   
@@ -243,3 +243,301 @@
         &:nth-child(5)
           width 100%
           margin-right 0
+
+
+@media screen and (max-width: 767px)
+  .content
+    width calc(100% - 40px)
+    margin 0 auto
+
+  .header
+    top 0
+    &-wrapper
+      flex-wrap: wrap
+    &-left
+      margin-right 0
+      width 100%
+      justify-content center
+      padding-bottom 10px
+    &-right
+      margin-right 0
+      width 100%
+    &-contacts
+      justify-content space-between
+  .header-cnt:last-child .header-phone a,
+  .header-mail a
+    color $bk
+  
+  .home
+    background-position 0 0
+    &-right
+      display none
+    &-left
+      width 100%
+    &-advantages
+      justify-content space-between
+    &-button
+      display flex
+      justify-content center
+
+  .offer
+    &-item
+      &__photo
+        height 200px
+      &__price
+        span
+          font-size 20px
+  p
+    font-size 14px
+    line-height 22px
+
+  .video
+    &-wrapper
+      height 350px
+      a
+        &::after
+          width 250px
+          height 250px
+  
+  .save
+    .title
+      h2
+        br
+          display none
+    &-items
+      justify-content space-between
+
+    &-item
+      width calc(50% - 10px)
+      margin-right 0
+  
+  .advantages
+    .title 
+      h2 
+        br
+          display none
+    &-items
+      width 100%
+    &-item
+      &__text
+        h3
+          br
+            display none
+  
+  .price
+    .title
+      h2  
+        br  
+          display none
+    &-wrapper
+      background none
+      border-radius: 0
+      box-shadow: none
+      display flex
+      flex-wrap: wrap
+      justify-content space-between
+    &-row
+      flex-direction: column
+      align-items flex-start
+      box-shadow: 0px 5px 40px 0px rgba(20,20,20,0.3)
+      background #fff
+      border-radius: 5px
+      width calc(50% - 10px)
+      justify-content space-between
+      margin-bottom 30px
+      &:first-child
+        display none
+    &-cell
+      flex-direction: column
+      padding 0
+      border-right: none
+      span
+        display block
+        width 100%
+        border-bottom 1px solid #e2e2e2
+        padding-top 10px
+        padding-bottom 10px
+        display flex
+        align-items center
+        justify-content center
+        padding-left 10px
+        padding-right 10px
+        min-height: 50px
+        box-sizing: border-box
+      &:nth-child(1),
+      &:nth-child(2),
+      &:nth-child(3),
+      &:nth-child(4),
+      &:nth-child(5)
+        width 100%
+      &__label
+        display flex
+        align-items center
+        font-family $Bold
+        justify-content center
+        width 100%
+        padding-top 10px
+        padding-bottom 10px
+        border-bottom 1px solid #e2e2e2
+        padding-left 10px
+        padding-right 10px
+        box-sizing: border-box
+        min-height: 50px
+    &-row
+      border: none
+
+  .slick-next, .slick-prev
+    width 30px
+    height 30px
+  .reviews
+    &-slide
+      &__item
+        flex-wrap: wrap
+        width calc(100% - 50px)
+      &__text
+        width 100%
+        span
+          font-size 16px
+          line-height 22px
+        a
+          font-size 16px
+          line-height 22px
+      &__photo
+        margin 0 auto
+        margin-bottom 20px
+
+  .virew
+    &-items
+      justify-content space-between
+    &-item
+      width calc(50% - 10px)
+      margin-right 0
+    &-video
+      margin-bottom 10px
+    &-title
+      margin-bottom 0
+  
+  .sertificates
+    h2
+      br
+        display none
+    
+  .portfolio
+    &-items
+      justify-content space-between
+    &-item
+      width calc(50% - 10px)
+      margin-right 0
+
+  .quiz
+    .title
+      h2
+        br
+          display none
+    &-wrapper
+      padding 20px
+  
+  h6
+    font-size 14px
+  .select2-selection.select2-selection--single, 
+  .select2-container .select2-selection--single .select2-selection__rendered, 
+  .select2-container--default .select2-selection--single .select2-selection__arrow
+    font-size 16px
+    height 50px
+  input[type='radio'] + label, input[type='checkbox'] + label
+    font-size 16px
+  input, textarea, select
+    height 50px
+    font-size 16px
+    padding-left 10px
+    +placeholder()
+      font-size 16px
+
+  button.button
+    box-shadow: 1px -1px 0px 0px rgba(0,0,0,0.3) inset, 0px 5px 30px 0px rgba(211,18,18,0.4)
+    height 50px
+  .quiz.showform .quiz-item__title h3 br
+    display none
+  .quiz.showform .form-row .form-group label
+    font-size 16px
+  
+  .any
+    &-wrapper
+      flex-wrap: wrap
+      padding-bottom 0
+    &-left
+      width 100%
+    &-image
+      position relative
+      left 0
+      top 0
+    .subtitle
+      margin-bottom 40px
+    &-phones
+      margin-bottom 40px
+
+
+  .footer
+    &-wrapper
+      flex-wrap: wrap
+    &-item
+      width 50%
+      &:last-child
+        width 50%
+        margin-top 50px
+
+
+@media screen and (max-width: 576px)
+  .content
+    width calc(100% - 30px)
+
+  .home
+    padding-top 150px
+    height 700px
+    &-title
+      h1
+        span:last-child
+          display inline
+          margin-left 5px
+  
+  h1,
+  h2
+    font-size 25px
+    line-height 32px
+  .offer-item
+    padding 0
+    &__photo
+      width calc(100% - 20px)
+      margin-left: auto
+      margin-right auto
+      height 160px
+  
+  .video
+    &-wrapper
+      height 300px
+    
+  .advantages
+    &-item
+      &__icon
+        margin-left 0
+        width 20px
+        margin-right 10px
+      &__text
+        width calc(100% - 30px)
+  .reviews-slide__item
+    padding 20px
+  .portfolio-item__name
+    font-size 16px
+  .quiz-line__inner h6
+    flex-direction: column
+
+  .footer
+    &-item
+      &:last-child
+        width 100%
+    
+  .contacts
+    &-pop
+      padding 40px 20px
+      span
+        font-size 20px
