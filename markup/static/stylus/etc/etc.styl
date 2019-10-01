@@ -217,3 +217,29 @@
   .any-phones a
     font-size 30px
     
+  
+  select
+    width 100%
+  
+  .quiz
+    &-bottom
+      flex-wrap: wrap
+    &-form
+      width 100%
+      margin-bottom 20px
+    &-controller
+      width 100%
+      justify-content center
+  .quiz.showform 
+    .form-row 
+      align-items flex-end
+      justify-content space-between
+      .form-group
+        width calc(50% - 10px)
+        margin-right 0
+        &:nth-child(4)
+          margin-right 0
+          width calc(50% - 10px)
+        &:nth-child(5)
+          width 100%
+          margin-right 0
